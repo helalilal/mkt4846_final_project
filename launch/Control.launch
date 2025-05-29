@@ -1,0 +1,7 @@
+<launch>
+
+    <node pkg="pid_controller" type="pid_controller_main" name="pid_controller" output="screen">
+        <rosparam command="load" file="$(find pid_controller)/config/Control.yaml" />
+    </node>
+
+</launch>
